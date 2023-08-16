@@ -54,12 +54,12 @@ message ue_info_m{
     required int32 rnti=1;     //rnti: UE's radio network temporary identifier
 
     // specific ue's measurements (these will come from the gnb)
-    optional float meas_type_1=2;
+    optional float meas_ber=2;
     optional float meas_type_2=3;
     optional float meas_type_3=4;
 
     // specific ue's propoerties (these will be set by the xapp and sent to gnb)
-    optional bool prop_1 = 5;
+    optional bool mcs = 5;
     optional float prop_2 = 6;
 }
 
